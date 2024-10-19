@@ -21,14 +21,14 @@ public class SajuDb {
 //    @Column(name = "lunAmount")
 //    private String lunAmount;
 
-    @Column(name = "lunYear")
-    private Long lunYear;
+    @Column(name = "solYear")
+    private Long solYear;
 
-    @Column(name = "lunMonth")
-    private Long lunMonth;
+    @Column(name = "solMonth")
+    private Long solMonth;
 
-    @Column(name = "lunDay")
-    private Long lunDay;
+    @Column(name = "solDay")
+    private Long solDay;
 
     @Column(name = "lunWolgeon")
     private String lunWolgeon;

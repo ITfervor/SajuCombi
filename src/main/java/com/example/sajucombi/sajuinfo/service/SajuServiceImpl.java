@@ -20,8 +20,8 @@ public class SajuServiceImpl implements SajuService {
     public UserInfoResponseDTO UserSave(UserInfoRequestDTO userInfoRequestDTO){
         try{
 
-            lunIljin = sajuInfoRepository.save();
-
+            lunIljin = sajuInfoRepository.();
+            
             return UserInfoResponseDTO.builder()
                     .code(String.valueOf(HttpStatus.OK))
                     .msg("User Save Succesefully")

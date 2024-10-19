@@ -30,14 +30,14 @@ public class SajuResult {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "lunYear")
-    private String lunYear;
+    @Column(name = "solYear")
+    private String solYear;
 
-    @Column(name = "lunMonth")
-    private String lunMonth;
+    @Column(name = "solMonth")
+    private String solMonth;
 
-    @Column(name ="lunDay")
-    private String lunDay;
+    @Column(name ="solDay")
+    private String solDay;
 
     @Column(name = "lunSecha")
     private String lunSecha;
