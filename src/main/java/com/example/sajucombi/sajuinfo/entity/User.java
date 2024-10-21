@@ -18,8 +18,8 @@ public class User {
     private Long id;
 
     //외래키로 연결해야하니까 한번 확인
-//    @Column(name = "lunIljin")
-//    private String lunIljin;
+    @Column(name = "lunIljin")
+    private String lunIljin;
 
     @Column(name = "name")
     private String name;
