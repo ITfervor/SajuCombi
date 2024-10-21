@@ -8,9 +8,9 @@
     "\\src\\main\\java\\com\\example",
     "\\src\\main\\java\\com\\example\\sajucombi",
     "\\src\\main\\java\\com\\example\\sajucombi\\sajuinfo",
-    "\\src\\main\\java\\com\\example\\sajucombi\\sajuinfo\\responseDTO",
-    "\\src\\main\\java\\com\\example\\sajucombi\\sajuinfo\\service"
+    "\\src\\main\\java\\com\\example\\sajucombi\\sajuinfo\\entity",
+    "\\src\\main\\java\\com\\example\\sajucombi\\sajuinfo\\requestDTO"
   ],
-  "SelectedNode": "\\src\\main\\java\\com\\example\\sajucombi\\sajuinfo\\repository\\SajuInfoRepository.java",
+  "SelectedNode": "\\src\\main\\java\\com\\example\\sajucombi\\sajuinfo\\requestDTO\\UserInfoRequestDTO.java",
   "PreviewInSolutionExplorer": false
 }

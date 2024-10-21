@@ -13,4 +13,5 @@ public class UserInfoResponseDTO {
 
     private String code;
     private String msg;
+    private Long userId;
 }
