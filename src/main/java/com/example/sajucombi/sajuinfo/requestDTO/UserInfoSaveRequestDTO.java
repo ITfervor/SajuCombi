@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @Data
-public class UserInfoRequestDTO {
+public class UserInfoSaveRequestDTO {
 
     private Long userId;
 

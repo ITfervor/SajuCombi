@@ -19,8 +19,5 @@ public class SajuInfoResponseDTO {
     private String CInnerType;
     private String IncInnerType;
     private String sajuImage;
-    private String calculate;
-    //이 부분은 한번 생각해보고 없앨지고력
-    private String sajuId;
 
 }

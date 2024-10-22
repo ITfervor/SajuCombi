@@ -11,16 +11,9 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class SajuInfoRequestDTO {
-    private Long lunIljinId;
 
+    private Long lunIljinId;
     //해당 일주를 토대로 데이터를 요청하는 것이기 때문에 해당 부분만 있으면 된다고 판단.
     private String lunIlJin;
-//    private String summary;
-//    private String correctType;
-//    private String incorrectType;
-//    private String cInnerType;
-//    private String incInncerType;
-//    private String sajuImage;
-    private Long sajuId;
 
 }

@@ -9,9 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Builder
-public class UserInfoResponseDTO {
+public class SajuInfoUpdateResponseDTO {
 
     private String code;
     private String msg;
-    private Long userId;
 }

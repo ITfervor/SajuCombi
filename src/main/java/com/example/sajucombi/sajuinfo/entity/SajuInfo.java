@@ -39,10 +39,4 @@ public class SajuInfo {
     @Column(name="sajuImage")
     private String sajuImage;
 
-    @Column(name="calculate")
-    private String calculate;
-
-    //해당 부분에 대해서 주요키인지 확인
-    @Column(name="sajuId")
-    private Long sajuId;
 }
