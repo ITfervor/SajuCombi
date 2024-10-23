@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class SajuInfoUpdateRequesetDTO {
+
     @NotNull(message = "수정 권한이 없습니다.")
     private Long lunIljinId;
     @NotNull(message = "수정 권한이 없습니다.")

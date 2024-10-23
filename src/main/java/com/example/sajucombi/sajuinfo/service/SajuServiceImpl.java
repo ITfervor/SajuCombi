@@ -12,6 +12,8 @@ import com.example.sajucombi.sajuinfo.requestDTO.UserInfoSaveRequestDTO;
 import com.example.sajucombi.sajuinfo.responseDTO.SajuInfoResponseDTO;
 import com.example.sajucombi.sajuinfo.responseDTO.SajuInfoUpdateResponseDTO;
 import com.example.sajucombi.sajuinfo.responseDTO.UserInfoSaveResponseDTO;
+import jakarta.transaction.Transactional;
+import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -93,25 +95,31 @@ public class SajuServiceImpl implements SajuService {
     }
 
 
+    @Transactional
     //사주 정보 업데이트 할때 사용하는 함수 -> 관리자 권한에서만 이용이 가능하도록 방안 생각 빌더 패턴 이용
     public SajuInfoUpdateResponseDTO InfoUpdate(SajuInfoUpdateRequesetDTO sajuInfoUpdateRequesetDTO){
 
         try{
 
+            SajuInfo sajuInfo = sajuInfoRepository.findById(sajuInfoUpdateRequesetDTO.getLunIljinId()).orElseThrow(NullPointerException::new);;
+            sajuInfo.updateSajuInfo(sajuInfoUpdateRequesetDTO);
+            sajuInfoRepository.save(sajuInfo);
+
             return SajuInfoUpdateResponseDTO.builder()
                     .code(String.valueOf(HttpStatus.OK))
-                    .msg("User Save Succesefully")
+                    .msg("SajuInfo Update Succesefully")
                     .build();
 
         }
         catch (Exception e){
             System.out.println(e.toString());
-            return SajuInfoUpdateResponseDTO.builder()
+            return SajuInfoUpdateResponseDTO.builder( )
                     .code(String.valueOf(HttpStatus.EXPECTATION_FAILED))
-                    .msg("User Save Fail")
+                    .msg("SajuInfo Update Fail")
                     .build();
         }
     }
+
 
 
     //일주 가져오는 메서드

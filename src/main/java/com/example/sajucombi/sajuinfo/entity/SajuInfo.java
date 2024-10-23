@@ -1,7 +1,11 @@
 package com.example.sajucombi.sajuinfo.entity;
 
+import com.example.sajucombi.sajuinfo.requestDTO.SajuInfoUpdateRequesetDTO;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 
 @NoArgsConstructor
@@ -39,4 +43,12 @@ public class SajuInfo {
     @Column(name="sajuImage")
     private String sajuImage;
 
+    public void updateSajuInfo(SajuInfoUpdateRequesetDTO sajuInfoUpdateRequesetDTO) {
+        this.lunIljin = sajuInfoUpdateRequesetDTO.getLunIljin();
+        this.summary = sajuInfoUpdateRequesetDTO.getSummary();
+        this.correctType = sajuInfoUpdateRequesetDTO.getCorrectType();
+        this.incorrectType = sajuInfoUpdateRequesetDTO.getIncorrectType();
+        this.cInnerType = sajuInfoUpdateRequesetDTO.getCInnerType();
+        this.incInnerType = sajuInfoUpdateRequesetDTO.getIncInnerType();
+    }
 }
