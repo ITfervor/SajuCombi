@@ -33,6 +33,7 @@ public class SajuServiceImpl implements SajuService {
 
     //user정보에 대해서 저장하는 메서드
     @Override
+    @Transactional
     public UserInfoSaveResponseDTO UserSave(UserInfoSaveRequestDTO userInfoSaveRequestDTO){
         try{
             //생년월일을 통해서 년주,월주,일주 불러오기

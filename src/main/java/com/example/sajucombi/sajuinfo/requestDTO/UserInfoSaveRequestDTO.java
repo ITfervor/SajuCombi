@@ -16,8 +16,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class UserInfoSaveRequestDTO {
 
-    private Long userId;
-
     @NotBlank(message = "이름을 기입해주세요")
     private String name;
 
