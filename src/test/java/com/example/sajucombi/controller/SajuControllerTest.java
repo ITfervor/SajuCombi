@@ -58,7 +58,9 @@ public class SajuControllerTest {
          UserInfoSaveResponseDTO saveResponseDTO = UserInfoSaveResponseDTO.builder()
                 .code(String.valueOf(HttpStatus.OK))
                 .msg("정상적으로 문제를 생성하였습니다.")
+                .userId(1L)  // userId에 값을 명시적으로 설정합니다.
                 .build();
+        
         System.out.println(saveResponseDTO);
 
         given(sajuService.UserSave(any(UserInfoSaveRequestDTO.class))).willReturn(saveResponseDTO);
