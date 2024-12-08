@@ -56,7 +56,7 @@ public class SajuServiceImpl implements SajuService {
             
 
             //user에 대한 정보 조회해서 제대로 입력이 되었는지 확인 
-            Long userIdResult = userInfoRepository.save(user).getId();
+            Long userIdResult = userInfoRepository.save(user).getUserId();
             
             return UserInfoSaveResponseDTO.builder()
                     .code(String.valueOf(HttpStatus.OK))
