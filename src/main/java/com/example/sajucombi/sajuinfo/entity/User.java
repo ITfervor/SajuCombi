@@ -14,8 +14,8 @@ import lombok.*;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
+    @Column(name = "userId")
+    private Long userId;
 
     //외래키로 연결해야하니까 한번 확인
     @Column(name = "lunIljin")

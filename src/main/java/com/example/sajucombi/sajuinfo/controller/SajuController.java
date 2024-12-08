@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SajuController {
     private SajuService sajuService;
 
-    @PostMapping("/saju")
+    @PostMapping("/saju/register")
     public ResponseEntity<UserInfoSaveResponseDTO> register(@Valid @RequestBody UserInfoSaveRequestDTO userInfoSaveRequestDTO){
         try{
             UserInfoSaveResponseDTO userInfoSaveResponseDTO = sajuService.UserSave(userInfoSaveRequestDTO);

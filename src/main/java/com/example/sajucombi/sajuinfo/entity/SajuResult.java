@@ -16,8 +16,8 @@ public class SajuResult {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @OneToOne
-    @JoinColumn(name = "id")
-    private User id;
+    @JoinColumn(name = "userId")
+    private User userId;
 
     @Column(name ="lunIljinId")
     @OneToOne
